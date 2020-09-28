@@ -15,9 +15,11 @@
 
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/main.css">
+  <script src="../script.js"></script>
 
     <script src="https://kit.fontawesome.com/11ff9d52ff.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -29,96 +31,123 @@
 
   <!-- Add your site or application content here -->
 
- <header>
-   <div class="content-wrapper">
+  <header>
+    <div id="navbar" class="content-wrapper">
 
-   <a href="../index.html"><i class="fab fa-css3"></i></a>
-  <nav>
-    <ul>
-      <li><a href="../about/index.html">About Me</a></li>
-      <li><a href="index.html">Portfolio</a></li>
-      <li><a href="#contacts">Contacts</a></li>
-    </ul>
-  </nav>
+    <a href="../index.html"><i class="fab fa-css3"></i></a>
+   <nav>
+     <ul>
+       <li><a href="../about/index.html">About Me</a></li>
+       <li><a href="index.html">Portfolio</a></li>
+       <li><a href="#contacts">Contacts</a></li>
+     </ul>
+   </nav>
 
-  <h1>Hi there! I'm developer Elena!</h1>
+   </div><!--header content-wrapper ends here-->
+  </header>
 
-  </div><!--header content-wrapper ends here-->
- </header>
+ <main id="portfolio-main">
+   <section class="portfolio-section top-section"> <!-- this section contains portfolio-items which are websites-->
+    <div class="content">
+      <h2>Websites</h2>
+      <div class="content-wrapper"> <!-- this wrapper needs to be row wrap-->
+        <div class="portfolio-item">
+          <div class="card">
+            <div class="face front">
+              <img src="../img/omar-lopez-296944-unsplash.jpg" alt="Image of the website">
+            </div>
+            <div class="face back">
+              <h4>Unplugged website</h4>
+              <p>HTML and CSS from Photoshop design comp.</p>
+              <p>This is a website of a retreat site for tech people. My main attention was to practice working with a bit bigger projects (this one has 3 pages) and code a responsive design (mobile first).</p>
+            </div>
+          </div>
+          <a href="https://elena-balsyte.github.io/Unplugged-site/" target="_blank">Visit the website</a>
+        </div> <!--portfolio-item ends here-->
 
- <main>
-   <section id="portfolio">
+        <div class="portfolio-item">
+          <div class="card">
+            <div class="face front">
+              <img src="../img/jubilee-austin.png" alt="Image of the website">
+            </div>
+            <div class="face back">
+              <h4>Personal website</h4>
+              <p>HTML and CSS from Photoshop design comp.</p>
+              <p>A simple website for professionals. The navigation menu is linked to the sections of the site. This is one of my first works and my main attention was to practice writing a semantic and tidy code.</p>
+            </div>
+          </div>
+          <a href="https://elena-balsyte.github.io/206-jubilee-austin/" target="_blank">Visit the website</a>
+          </div> <!--portfolio-item ends here-->
+      </div> <!--content-wrapper ends here-->
 
-   <div class="content-wrapper">
-    <div class="portfolio-item">
-      <button class="link"><a href="https://elena-balsyte.github.io/206-Rogue-pickings/" target="_blank">Visit the website</a></button>
+      <div class="content-wrapper"> <!-- this wrapper needs to be row wrap-->
+        <div class="portfolio-item">
+          <div class="card">
+            <div class="face front">
+              <img src="../img/michal-kubalczyk-WecngmAT-KY-unsplash.jpg" alt="Image of the website">
+            </div>
+            <div class="face back">
+              <h4>Personal website</h4>
+              <p>HTML/CSS and design</p>
+              <p>A simple one page website for professionals. I've done this project to practice flexbox and media querries. Also wanted to give it a go and create the design by myself.</p>
+            </div>
+          </div>
+          <a href="https://elena-balsyte.github.io/206-project-3/" target="_blank">Visit the website</a>
+        </div> <!--portfolio-item ends here-->
 
-      <figure>
-      <a href="https://elena-balsyte.github.io/206-Rogue-pickings/" target="_blank"><img src="../img/sonja-langford-H5k8PoC1BBc-unsplash.jpg" alt="Rogue pickings site"></a>
-      </figure>
+        <div class="portfolio-item">
+          <div class="card">
+            <div class="face front">
+              <img src="../img/sonja-langford-H5k8PoC1BBc-unsplash.jpg" alt="Image of the website">
+            </div>
+            <div class="face back">
+              <h4>Rogue Pickings website</h4>
+              <p>HTML and CSS from Photoshop design comp.</p>
+              <p>A simple website for small businesses. The navigation menu is linked to the sections of the site. This is one of my first works and my main attention was to write a semantic code and write responsive code.</p>
+            </div>
+          </div>
+          <a href="https://elena-balsyte.github.io/206-Rogue-pickings/" target="_blank">Visit the website</a>
+          </div> <!--portfolio-item ends here-->
+      </div> <!--content-wrapper ends here-->
+    </div> <!-- .content ends here-->
 
-      <div class="dropdown">
-        <button class="dropbtn">Read more</button>
-         <div class="dropdown-content">
-           <h4>Rogue Pickings website</h4>
-           <p>HTML and CSS from Photoshop design comp.</p>
-           <p>A simple website for small businesses. The navigation menu is linked to the sections of the site. This is one of my first works and my main attention was to write a semantic code, practice media querries and add some fancy fonts.</p>
-         </div><!--- dropdown-content ends here-->
-       </div><!-- .dropdown ends here-->
-    </div><!--- .portfolio-item ends here-->
+   </section> <!--This section contains portfolio-items which are javascript projects-->
 
-    <div class="portfolio-item">
-      <button class="link"><a href="https://elena-balsyte.github.io/Unplugged-site/" target="_blank">Visit the website</a></button>
+   <section class="portfolio-section">
+    <div class="content">
+      <h2>JavaScript</h2>
+      <div class="content-wrapper"> <!-- this wrapper needs to be row wrap-->
+        <div class="portfolio-item">
+          <div class="card">
+            <div class="face front">
+              <img src="https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/magic8ballQuestion.png" alt="Image of the website">
+            </div>
+            <div class="face back">
+              <h4>Magic-8-ball</h4>
+              <p>Small JavaScript project</p>
+              <p>One of the first JavaScript projects. Press the button to ask a question and press ok. The magic-8-ball shakes and picks a random answer from the answers array.</p>
+            </div>
+          </div>
+          <a href="https://elena-balsyte.github.io/Magic-8-ball/" target="_blank">Visit the website</a>
+        </div> <!--portfolio-item ends here-->
 
-      <figure>
-        <a href="https://elena-balsyte.github.io/Unplugged-site/" target="_blank"><img src="../img/jake-melara-30679-unsplash.jpg" alt="Unplugged site"></a>
-      </figure>
+        <div class="portfolio-item">
+          <div class="card">
+            <div class="face front">
+              <img src="../img/taylor-grote-vVaRqEeb_Ss-unsplash.jpg" alt="Image of the website">
+            </div>
+            <div class="face back">
+              <h4>Lolcat clock</h4>
+              <p>HTML, CSS and JavaScript</p>
+              <p>One of the first JavaScript projects. Interactive Lol-cat clock, that displays different images for different time of the day. Dropdown selectors, allows to set the event's time and the button turns on the party time.</p>
+            </div>
+          </div>
+          <a href="https://elena-balsyte.github.io/lolcat-clock/" target="_blank">Visit the website</a>
+          </div> <!--portfolio-item ends here-->
+      </div> <!--content-wrapper ends here-->
 
-      <div class="dropdown">
-        <button class="dropbtn">Read more</button>
-         <div class="dropdown-content">
-           <h4>Unplugged website</h4>
-           <p>HTML and CSS from Photoshop design comp.</p>
-           <p>This is a website of a retreat site for tech people. My main attention was to practice working with a bit bigger projects (this one has 3 pages) and code a responsive design (mobile first).</p>
-         </div><!--- dropdown-content ends here-->
-       </div><!-- .dropdown ends here-->
-    </div><!--- .portfolio-item ends here-->
+    </div>
 
-    <div class="portfolio-item">
-      <button class="link"><a href="https://elena-balsyte.github.io/206-jubilee-austin/" target="_blank">Visit the website</a></button>
-
-      <figure>
-      <a href="https://elena-balsyte.github.io/206-jubilee-austin/" target="_blank"><img src="../img/jubilee-austin.png" alt="Jubilee Austin website"></a>
-      </figure>
-
-      <div class="dropdown">
-        <button class="dropbtn">Read more</button>
-         <div class="dropdown-content">
-           <h4>Personal website</h4>
-           <p>HTML and CSS from Photoshop design comp.</p>
-           <p>A simple website for professionals. The navigation menu is linked to the sections of the site. This is one of my first works and my main attention was to practice writing a semantic and tidy code.</p>
-         </div><!--- dropdown-content ends here-->
-       </div><!-- .dropdown ends here-->
-    </div><!--- .portfolio-item ends here-->
-
-    <div class="portfolio-item">
-      <button class="link"><a href="https://elena-balsyte.github.io/206-project-3/" target="_blank">Visit the website</a></button>
-
-      <figure>
-      <a href="https://elena-balsyte.github.io/206-project-3/" target="_blank"><img src="../img/michal-kubalczyk-WecngmAT-KY-unsplash.jpg" alt="Personal website"></a>  
-      </figure>
-
-      <div class="dropdown">
-        <button class="dropbtn">Read more</button>
-         <div class="dropdown-content">
-           <h4>Personal website</h4>
-           <p>HTML/CSS and design</p>
-           <p>A simple one page website for professionals. I've done this project to practice flexbox and media querries. Also wanted to give it a go and create the design by myself.</p>
-         </div><!--- dropdown-content ends here-->
-       </div><!-- .dropdown ends here-->
-    </div><!--- .portfolio-item ends here-->
-
-  </div><!-- .content-wrapper ends here-->
    </section>
  </main>
 

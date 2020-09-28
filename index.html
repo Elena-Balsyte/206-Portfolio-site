@@ -1,28 +1,30 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <title>Elena Balsyte | Homepage</title>
-  <meta name="description" content="Front-end developer based in London, UK">
+  <meta name="description" content="Front-end developer based in Poole, UK">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<!--This part determines what is displayed together with link of the website -->
   <meta property="og:title" content="Developer Elena Balsyte">
-  <meta property="og:description" content="Front-end developer based in London, UK.">
+  <meta property="og:description" content="Front-end developer based in Poole, UK.">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="400px">
   <meta property="og:image:height" content="250px">
   <meta property="og:url" content="https://developer-elena.co.uk/img/michal-kubalczyk-WecngmAT-KY-unsplash.jpg">
 
-
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-  <link rel="manifest" href="site.webmanifest">
+  <!--This part is for a little icon that appears next to the Title os the site (on the tab of a browser)-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <script src="script.js"></script>
 
     <script src="https://kit.fontawesome.com/11ff9d52ff.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&family=Roboto:wght@500&display=swap" rel="stylesheet">
@@ -38,7 +40,7 @@
   <!-- Add your site or application content here -->
 
  <header>
-   <div class="content-wrapper">
+   <div id="navbar" class="content-wrapper">
 
    <a href="#homepage"><i class="fab fa-css3"></i></a>
   <nav>
@@ -49,26 +51,26 @@
     </ul>
   </nav>
 
-  <h1>Hi there! I'm developer Elena!</h1>
-
   </div><!--header content-wrapper ends here-->
  </header>
 
- <main>
+ <main id="homepage-main">
    <section class="greeting">
-     <div id="greeting" class="content-wrapper">
-       <h2>Welcome to my Portfolio website.</h2>
+     <div class="content-wrapper">
+       <h1 id="greeting">Hi there! Welcome to my Portfolio website.</h1>
      </div>
    </section>
 
    <section class="about-site">
-     <div class="content-wrapper">
+     <h2>I am a front-end developer</h2>
+     <div class="grid-container">
 
-       <h3>I am a front-end developer, web designer and creative thinker based in London.</h3>
-
-       <p>Here you can read more <a href="about/index.html" target="_blank">about me</a>, my skills and goals.</p>
-
-        <p>Or check some of my <a href="portfolio/index.html" target="_blank">projects</a> and if you like what you see, you will find my contacts down there<a href="#contacts"><i class="fas fa-level-down-alt"></i></a></p>
+       <p>Here you can read more about me </p>
+       <a href="about/index.html"><button type="button">Click me</button></a>
+       <p>Have a look at some of my projects </p>
+       <a href="portfolio/index.html"><button type="button">Click me</button></a>
+       <p>Or contact me for more details</p>
+       <a href="#contacts"><button type="button">Click me</button></a>
 
    </div>
    </section>
@@ -109,6 +111,8 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </body>
 
 </html>
