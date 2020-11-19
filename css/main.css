@@ -7,9 +7,8 @@
  * Kroc Camen, and the H5BP dev community and team.
  */
 
-
- /****CONTENTS (this website has mobile first design)*************************/
- /* 111 - Mobile styles - Base styles
+/****CONTENTS (this website has mobile first design)*************************/
+/* 111 - Mobile styles - Base styles
  /* 190 - Header styles
  /* 250 - Main section styles
  /* 338 - Footer styles
@@ -17,7 +16,6 @@
  /* 530 - Portfolio PAGE styles
  /* 750 @media queries
  ****************************************************************************/
-
 
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -119,7 +117,7 @@ html {
 body {
   color: #ffc933;
   font-size: 16px;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   text-align: center;
   width: 100%;
   display: flex;
@@ -131,11 +129,12 @@ main {
   overflow: auto;
 }
 @font-face {
-    font-family: WisdomScript;
-    src: url('../fonts/wisdom-script.otf') format('opentype');
+  font-family: WisdomScript;
+  src: url("../fonts/wisdom-script.otf") format("opentype");
 }
 
-header, section  {
+header,
+section {
   display: flex;
   justify-content: center;
   padding: 0 0 3em 0;
@@ -165,7 +164,7 @@ img {
 }
 
 h1 {
-  color: #FFCF4D;
+  color: #ffcf4d;
   font-size: 2.5em;
   font-weight: bold;
   width: 75%;
@@ -180,7 +179,7 @@ h2 {
 }
 
 h3 {
-  color: #FFC933;
+  color: #ffc933;
   font-size: 1.25em;
   font-weight: bold;
   width: 100%;
@@ -191,7 +190,7 @@ h3 {
 #navbar {
   background-color: #010816;
   opacity: 1;
-  border-bottom: 1px solid #FFCF4D;
+  border-bottom: 1px solid #ffcf4d;
   padding: 20px 10px; /* Large padding which will shrink on scroll (using JS)*/
   transition: 0.7s; /* Adds a transition effect when the padding is decreased */
   width: 100%;
@@ -201,28 +200,25 @@ h3 {
   height: 200px;
 }
 
-
 header nav ul {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   flex-flow: row wrap;
-   width: 100%;
-   list-style-type: none;
-   padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
 }
-
 
 header nav ul li {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-flow: row wrap;
-
 }
 
 nav ul li a {
-  color: #FFC933;
+  color: #ffc933;
   font-size: 0.75em;
   text-decoration: none;
   text-transform: uppercase;
@@ -232,25 +228,25 @@ nav ul li a {
 header a {
   font-size: 1.25em;
   margin: 15px;
-  color: #FFCF4D;
+  color: #ffcf4d;
 }
 
 /* mouse over link */
 header a:hover {
-  color: #F8F8FF;
+  color: #f8f8ff;
   text-decoration: none;
 }
 
 /* selected link */
 header a:active {
-  color: #F8F8FF;
+  color: #f8f8ff;
   text-decoration: none;
 }
 
 /*******Main section styles*******/
 
 main#homepage-main {
-  background-image:  url(../img/johny-goerend-Oz2ZQ2j8We8-unsplash.jpg);
+  background-image: url(../img/johny-goerend-Oz2ZQ2j8We8-unsplash.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -258,7 +254,7 @@ main#homepage-main {
 
 #greeting {
   padding: 75px 25px 25px 25px;
-  opacity: 0;
+  /*opacity: 0;*/
   transition: 1.5s;
 }
 
@@ -302,12 +298,12 @@ button {
   padding: 25px 10px;
   margin: 0px 25px 0px 25px;
   border: none;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition-duration: 0.4s;
   outline: none;
 }
 
-button:hover{
+button:hover {
   background-color: #fff;
   color: orange;
 }
@@ -334,7 +330,6 @@ section.about-site a:active {
   text-decoration: none;
 }
 
-
 /*******Footer styles*******/
 
 footer {
@@ -344,35 +339,33 @@ footer {
   background-color: #013058;
   padding-top: 1.5em;
   flex-flow: column;
- }
+}
 
 footer div#contacts.content-wrapper {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-flow: column;
-   padding-bottom: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  padding-bottom: 2em;
 }
 
 div.social a {
-  color: #FFCF4D;
+  color: #ffcf4d;
   margin: 10px;
   font-size: 1.5em;
   transition: font-size 0.5s;
 }
 
-
 /* mouse over link */
 div.social a:hover {
-  color: #F8F8FF;
+  color: #f8f8ff;
   font-size: 2em;
 }
 
 /* selected link */
 div.social a:active {
-  color: #F8F8FF;
+  color: #f8f8ff;
 }
-
 
 div.footer-nav {
   width: 100%;
@@ -381,31 +374,28 @@ div.footer-nav {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid #FFC933;
-
+  border-top: 1px solid #ffc933;
 }
 
 div.footer-nav nav ul {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   flex-flow: row wrap;
-   width: 100%;
-   list-style-type: none;
-   padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
 }
-
 
 div.footer-nav nav ul li {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
-
 }
 
 div.footer-nav nav ul li a {
-  color: #FFC933;
+  color: #ffc933;
   font-size: 0.6em;
   font-weight: 300;
   text-decoration: none;
@@ -414,18 +404,18 @@ div.footer-nav nav ul li a {
 }
 
 div.footer-nav a:hover {
-  color: #F8F8FF;
+  color: #f8f8ff;
 }
 
 div.footer-nav i {
   font-size: 1em;
   margin: 15px;
-  color: #FFCF4D;
+  color: #ffcf4d;
   font-weight: 300;
 }
 
 div.footer-nav i:hover {
-  color: #F8F8FF;
+  color: #f8f8ff;
 }
 /*******ABOUT ME PAGE STYLES*******/
 
@@ -433,7 +423,6 @@ section#top {
   background-color: #013058;
   text-align: left;
 }
-
 
 section#top div.content-wrapper {
   display: flex;
@@ -444,15 +433,15 @@ section#top div.content-wrapper {
 
 section#top h2,
 section#top h3 {
-  color: #F5FFE6;
+  color: #f5ffe6;
 }
 
-section#top  {
-  Padding-top: 13em;
+section#top {
+  padding-top: 13em;
 }
 
 section#top ul {
-  color: #F5FFE6;
+  color: #f5ffe6;
   text-align: left;
   padding: 0 20px;
 }
@@ -462,7 +451,8 @@ section#bottom ul li {
   padding-bottom: 1em;
 }
 
-section#top figure, img#about-me {
+section#top figure,
+img#about-me {
   border: 1px solid #ffc933;
   border-radius: 50%;
   box-shadow: 3px 5px 18px 6px rgba(0, 0, 0, 0.8);
@@ -471,7 +461,7 @@ section#top figure, img#about-me {
 }
 
 section#middle {
-  background-color: #F5FFE6;
+  background-color: #f5ffe6;
   color: #011133;
   font-weight: bolder;
   line-height: 2;
@@ -514,7 +504,7 @@ section#middle a:active {
 
 section#bottom {
   background-color: #880a1f;
-  border-top: 2px solid #FFCF4D;
+  border-top: 2px solid #ffcf4d;
   text-align: left;
 }
 
@@ -524,7 +514,7 @@ section#bottom div.content-wrapper {
 }
 
 section#bottom ul {
-  color: #FFCF4D;
+  color: #ffcf4d;
   text-align: left;
   padding: 0 20px;
 }
@@ -537,8 +527,8 @@ main#portfolio-main {
   background-color: #011133;
 }
 section.portfolio-section.top-section {
-    margin-top: 125px;
-    flex-direction: column;
+  margin-top: 125px;
+  flex-direction: column;
 }
 
 section.portfolio-section {
@@ -557,7 +547,7 @@ section.portfolio-section div.content {
 }
 
 section.portfolio-section .content h2 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 3.5em;
   text-transform: uppercase;
   font-weight: 900;
@@ -577,8 +567,6 @@ section.portfolio-section .content h2 {
 section.portfolio-section h2 {
   -webkit-text-stroke: 1px #ffc933;
 }
-
-
 
 /************************3D FLIP CARD***************************************/
 
@@ -608,8 +596,13 @@ section.portfolio-section h2 {
 }
 
 .card .face.front {
-  background: rgb(1,8,22);
-  background: linear-gradient(125deg, rgba(1,8,22,1) 0%, rgba(1,17,51,1) 64%, rgba(1,8,22,1) 100%);
+  background: rgb(1, 8, 22);
+  background: linear-gradient(
+    125deg,
+    rgba(1, 8, 22, 1) 0%,
+    rgba(1, 17, 51, 1) 64%,
+    rgba(1, 8, 22, 1) 100%
+  );
   border: 2px solid #010816;
 }
 
@@ -623,7 +616,6 @@ section.portfolio-section h2 {
   display: flex;
   flex-direction: column;
   padding: 10px;
-
 }
 
 .card:hover .face.back {
@@ -636,8 +628,13 @@ div.face.front img {
 
 main#portfolio-main a {
   color: #ffc933;
-  background: rgb(1,8,22);
-  background: linear-gradient(125deg, rgba(1,8,22,1) 0%, rgba(1,17,51,1) 64%, rgba(1,8,22,1) 100%);
+  background: rgb(1, 8, 22);
+  background: linear-gradient(
+    125deg,
+    rgba(1, 8, 22, 1) 0%,
+    rgba(1, 17, 51, 1) 64%,
+    rgba(1, 8, 22, 1) 100%
+  );
   font-weight: bolder;
   text-decoration: none;
   border: 2px solid #010816;
@@ -658,14 +655,11 @@ main#portfolio-main div.content-wrapper {
   justify-content: space-around;
 }
 
-
-
 div.portfolio-item {
   display: flex;
   flex-flow: column;
   align-items: center;
 }
-
 
 /* ==========================================================================
    Helper classes
@@ -759,12 +753,12 @@ div.portfolio-item {
 @media only screen and (min-width: 768px) {
   /* TABLET'S STYLES */
 
-nav ul li a {
-  padding: 0 3em;
-}
+  nav ul li a {
+    padding: 0 3em;
+  }
 
   div.social a {
-  font-size: 1.75em;
+    font-size: 1.75em;
   }
 
   section#top figure {
@@ -774,56 +768,56 @@ nav ul li a {
     margin: 1em 0;
   }
 
-
   section#top div.content-wrapper {
     justify-content: space-between;
   }
 
-section.portfolio-section .content h2 {
-  font-size: 6.5em;
-}
+  section.portfolio-section .content h2 {
+    font-size: 6.5em;
+  }
 
-section.portfolio-section.div.content-wrapper {
-  justify-content: space-around;
-}
+  section.portfolio-section.div.content-wrapper {
+    justify-content: space-around;
+  }
 
   div.portfolio-item {
     width: 35%;
   }
-
 }
 
 @media only screen and (min-width: 1200px) {
   /* Desktop STYLES */
 
-  #skills-list, figure {
+  #skills-list,
+  figure {
     width: 50%;
   }
 
-section#middle div.paragraph-wrapper {
+  section#middle div.paragraph-wrapper {
     width: 45%;
     padding: 1em;
     text-align: justify;
   }
 
-section#bottom ul, section#bottom p {
-  width: 45%;
-  padding: 1em;
-  text-align: justify;
-}
+  section#bottom ul,
+  section#bottom p {
+    width: 45%;
+    padding: 1em;
+    text-align: justify;
+  }
 
-footer {
-  min-height: 350px;
-  box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.8);
-}
+  footer {
+    min-height: 350px;
+    box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.8);
+  }
 
-div#contacts.content-wrapper {
-  padding-top: 2em;
-}
+  div#contacts.content-wrapper {
+    padding-top: 2em;
+  }
 
-section.portfolio-section .content h2 {
-  font-size: 8em;
-}
+  section.portfolio-section .content h2 {
+    font-size: 8em;
+  }
 }
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
@@ -893,7 +887,6 @@ section.portfolio-section .content h2 {
   }
   h2,
   h3 {
-
     page-break-after: avoid;
   }
 }
