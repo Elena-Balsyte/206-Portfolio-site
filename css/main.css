@@ -443,6 +443,8 @@ section#top {
 
 .important {
   color: #ffc933;
+  width: 100%;
+  text-align: center;
 }
 
 span {
@@ -450,27 +452,35 @@ span {
 }
 
 /* unvisited link */
-section#top a:link {
+section#top a:link,
+section#middle a:link,
+section#bottom a:link {
   color: #880a1f;
   text-decoration: none;
   font-weight: 800;
 }
 
 /* visited link */
-section#top a:visited {
+section#top a:visited,
+section#middle a:visited,
+section#bottom a:visited {
   color: #880a1f;
   text-decoration: none;
 }
 
 /* mouse over link */
-section#top a:hover {
+section#top a:hover,
+section#middle a:hover,
+section#bottom a:hover {
   color: #ffc933;
   text-decoration: none;
   font-size: 1.4em;
 }
 
 /* selected link */
-section#top a:active {
+section#top a:active,
+section#middle a:active,
+section#bottom a:active {
   color: #880a1f;
   text-decoration: none;
   font-size: 1.4em;
@@ -820,6 +830,16 @@ main#portfolio-main div.content-wrapper {
     width: 45%;
     padding: 1em;
     text-align: justify;
+  }
+
+  section#bottom p.important {
+    width: 100%;
+    text-align: center;
+  }
+
+  p.important a {
+    text-decoration: none;
+    color: #880a1f;
   }
 
   footer {
